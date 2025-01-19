@@ -4,28 +4,28 @@
                 id: 1,
                 name: "T-shirt Premium",
                 price: 29.99,
-                image: "/api/placeholder/250/200",
+                image: "T-shirt Premium.jpg",
                 description: "T-shirt en coton bio"
             },
             {
                 id: 2,
                 name: "Jean Slim",
                 price: 59.99,
-                image: "/api/placeholder/250/200",
+                image: "Jean Slim.jpg",
                 description: "Jean slim stretch confortable"
             },
             {
                 id: 3,
                 name: "Robe d'été",
                 price: 49.99,
-                image: "/api/placeholder/250/200",
+                image: "Robe d'été.jpg",
                 description: "Robe légère et élégante"
             },
             {
                 id: 4,
                 name: "Veste en cuir",
                 price: 129.99,
-                image: "/api/placeholder/250/200",
+                image: "Veste en cuir.jpg",
                 description: "Veste en cuir véritable"
             },
             // Ajoutez d'autres produits ici
