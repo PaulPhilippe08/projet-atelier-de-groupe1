@@ -221,6 +221,28 @@ footer {
     }
 }
 
+@media (max-width: 480px) { 
+    .nav-links {
+         display: none;
+    } 
+    
+    .cart-icon {
+         margin-left: auto;
+    } 
+    
+    .hero { 
+        height: 200px;
+    } 
+    
+    .products-grid { 
+        grid-template-columns: 1fr; 
+    }
+    
+    .footer-content { 
+        grid-template-columns: 1fr; 
+    } 
+}
+
 /* Contact Form Styles */
 .contact-form {
     max-width: 600px;
