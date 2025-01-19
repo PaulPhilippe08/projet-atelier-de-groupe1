@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FashionStore - Votre Boutique de Mode</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+
+    .notification {
+      display: none;
+      margin-top: 1rem;
+      padding: 1rem;
+      background: linear-gradient(to bottom, red, black );
+      color: white;
+      border: 1px solid red;
+      border-radius: 5px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+        <nav>
+            <a href="#" class="logo">FashionStore</a>
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="à propos.html">À propos</a>
+                <a href="#contact">Contact</a>
+                <div class="cart-icon" onclick="toggleCart()">
+                    🛒 <span class="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+  </header>
+
+  <main>
+    <section class="contact-form">
+      <h1>Contactez-nous</h1>
+      <form id="contactForm">
+        <label for="name">Nom</label>
+        <input type="text" id="name" placeholder="Votre nom" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Votre email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Votre message" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+      <div class="notification" id="notification">Merci pour votre message !</div>
+    </section>
+  </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>FashionStore</h3>
+                <p>Votre boutique de mode en ligne</p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Email: contact@fashionstore.com</p>
+                <p>Tél: +221 77 245 50 15</p>
+            </div>
+            <div>
+                <h3>Suivez-nous</h3>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Twitter</p>
+            </div>
+        </div>
+    </footer>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      if (name && email && message) {
+        const notification = document.getElementById("notification");
+        notification.style.display = "block";
+        notification.textContent = `Merci ${name}, votre message a bien été envoyé !`;
+
+        setTimeout(() => {
+          notification.style.display = "none";
+        }, 5000);
+
+        this.reset();
+      } else {
+        alert("Veuillez remplir tous les champs.");
+      }
+    });
+  </script>
+</body>
+</html>

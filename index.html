@@ -1,0 +1,116 @@
+<html lang="fr"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionStore - Votre Boutique de Mode</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+<body>
+
+    <script src="script.js"></script>
+    <!-- Header avec navigation -->
+    <header>
+        <nav>
+            <a href="#" class="logo">FashionStore</a>
+            <div class="nav-links">
+                <a href="#Accueil">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="à propos.html">À propos</a>
+                <a href="contact.html">Contact</a>
+                <div class="cart-icon" onclick="toggleCart()">
+                    🛒 <span class="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <!-- Section Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Bienvenue chez FashionStore</h1>
+                <p>Découvrez notre collection tendance</p>
+            </div>
+        </section>
+
+        <!-- Grille de produits -->
+        <section class="products-grid" id="productsGrid"><div class="product-card">
+                    <img src="T-shirt Premium.jpg" alt="T-shirt Premium" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">T-shirt Premium</h3>
+                        <p class="product-price">29.99€</p>
+                        <p>T-shirt en coton bio</p>
+                        <button onclick="addToCart(1)" class="add-to-cart">
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div><div class="product-card">
+                    <img src="Jean Slim.jpg" alt="Jean Slim" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Jean Slim</h3>
+                        <p class="product-price">59.99€</p>
+                        <p>Jean slim stretch confortable</p>
+                        <button onclick="addToCart(2)" class="add-to-cart">
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div><div class="product-card">
+                    <img src="Robe d'été.jpg" alt="Robe d'été" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Robe d'été</h3>
+                        <p class="product-price">49.99€</p>
+                        <p>Robe légère et élégante</p>
+                        <button onclick="addToCart(3)" class="add-to-cart">
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div><div class="product-card">
+                    <img src="Veste en cuir.jpg" alt="Veste en cuir" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Veste en cuir</h3>
+                        <p class="product-price">129.99€</p>
+                        <p>Veste en cuir véritable</p>
+                        <button onclick="addToCart(4)" class="add-to-cart">
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div></section>
+    </main>
+
+    <!-- Modal du panier -->
+    <div class="cart-modal" id="cartModal" style="display: none;">
+        <div class="cart-content">
+            <h2>Votre Panier</h2>
+            <div id="cartItems"></div>
+            <div id="cartTotal">Total: 0.00€</div>
+            <button onclick="checkout()" class="add-to-cart">Commander</button>
+            <button onclick="toggleCart()" class="add-to-cart" style="background-color: #e74c3c;">Fermer</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>FashionStore</h3>
+                <p>Votre boutique de mode en ligne</p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Email: contact@fashionstore.com</p>
+                <p>Tél: +221 77 245 50 15</p>
+            </div>
+            <div>
+                <h3>Suivez-nous</h3>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Twitter</p>
+            </div>
+        </div>
+    </footer>
+
+    
+
+
+</body></html>
